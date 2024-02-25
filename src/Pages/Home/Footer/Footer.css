@@ -1,0 +1,83 @@
+.footer_mainContainer {
+  position: relative;
+  width: 100vw;
+  height: 700px;
+  background-color: black;
+  z-index: 0;
+  /* overflow: hidden; */
+}
+
+.parallax-container {
+  background-color: inherit;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  height: 100%;
+  width: 98%;
+  border: green 1px solid;
+}
+
+
+.parallax-container>* {
+  animation: parallax linear;
+  animation-timeline: scroll();
+}
+
+
+@keyframes parallax {
+  to {
+    transform:
+      translateY(calc(var(--parallax-speed) * 200px));
+  }
+}
+
+.my_photo {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 50px;
+  filter: grayscale(10%) brightness(90%) contrast(120%) saturate(120%);
+  filter: drop-shadow(2px 2px 5px #888888);
+}
+
+.footer_content {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  bottom: 50%;
+  transform: translateY(50%);
+  padding-left: 10%;
+  width: 100%;
+  z-index: 2;
+
+}
+
+.footer_content h2 {
+  font-size: 48px;
+}
+
+.footer_images>* {
+  gap: 3rem;
+  width: 35px;
+  height: 35px;
+  margin-right: 25px;
+}
+
+.ellipse {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border: red solid 2px;
+
+}
+
+.ellipse img {
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  filter: grayscale(10%) brightness(90%) contrast(120%) saturate(120%);
+  filter: drop-shadow(2px 5px 5px #888888);
+}

@@ -5,17 +5,18 @@ import MoreWork from "./MoreWorks/MoreWork";
 import Navbar from "./Navbar/Navbar";
 import Projects from "./Projects/Projects";
 
-export default function Home () {
-  return(
+export default function Home() {
+  
+  return (
     <>
       <section id="home">
         <Navbar />
       </section>
-      <section>
+      <section id="hero">
         <Hero />
       </section>
-      <section>
-        <AboutMe  id="about"/>
+      <section id="about">
+        <AboutMe />
       </section>
       <section id="projects">
         <Projects />
@@ -27,5 +28,5 @@ export default function Home () {
         <Footer />
       </section>
     </>
-  )
+  );
 }

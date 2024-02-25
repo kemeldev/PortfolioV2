@@ -1,13 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
+  margin: 0;
+  padding: 0;
+
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #999D9E;
 
   /* font-synthesis: none; */
   text-rendering: optimizeLegibility;
@@ -19,12 +28,21 @@
 
 body {
   margin: 0;
+  padding: 0;
   min-width: 320px;
   min-height: 100vh;
+  overflow-x: hidden;
+  width: 100vw;
   color: #FFF;
   font-family: Inter;
   font-size: 22.321px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  transition: background-color 1s ease-in-out;
+}
+
+body.background-color-change {
+  background-color: black;
+  transition: background-color 1s ease-in-out;
 }

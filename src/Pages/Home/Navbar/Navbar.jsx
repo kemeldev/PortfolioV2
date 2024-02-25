@@ -1,14 +1,8 @@
 import { useState } from 'react'
-import { closeX } from '../../../assets/icons'
+import { closeX,linkedIn,githubLogo } from '../../../assets/icons'
 import './Navbar.css'
 import {motion, AnimatePresence } from 'framer-motion'
-
-// const navLinks = [
-//   {title : "Projects", href: "projects"},
-//   {title : "About me", href: "about"},
-//   {title : "Contact", href: "contact"},
-// ]
-
+import MagneticBtn from '../../../componets/MagneticBtn';
 
 export default function Navbar   () {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -38,36 +32,47 @@ export default function Navbar   () {
         <h3>Kevin Bolanos - kemel.developer</h3>
 
         <ul className='navbar_list'>
-          <li>Projects</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li><MagneticBtn buttonText={"Projects"} /></li>
+          <li><MagneticBtn buttonText={"About"} /></li>
+          <li><MagneticBtn buttonText={"Contact"} /></li>
         </ul>
 
         <div className='navbar_menuBtn' onClick={() => setMenuOpen(prevstate => !prevstate)}>
-          <h3>Menu</h3>
+          <h3><MagneticBtn buttonText={"Menu"} /></h3>
         </div>
 
         <AnimatePresence>
-        {menuOpen && (
-        
-        <motion.div 
-          variants={menuVars}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-          className='navbar_menuComponent'
-          >
-          <img 
-            src={closeX}
-            onClick={() => setMenuOpen(prevstate => !prevstate)}
-            />
-          <motion.ul variants={{ initial: { x: '-100%' }, animate: { x: 0 } }} className='navbar_menuComponent_list'>
-                <li>Projects</li>
-                <li>About</li>
-                <li>Contact</li>
+          {menuOpen && (
+          
+          <motion.div 
+            variants={menuVars}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+            className='navbar_menuComponent'
+            >
+            <img 
+              src={closeX}
+              onClick={() => setMenuOpen(prevstate => !prevstate)}
+              />
+            <motion.ul variants={{ initial: { x: '-100%' }, animate: { x: 0 } }} className='navbar_menuComponent_list'>
+                  <h4>Navigation</h4>
+                  <hr />
+                  <li>Projects</li>
+                  <li>About</li>
+                  <li>Contact</li>
+                  <h4>Social</h4>
+                  <hr />
+                  <div className="navbar_menuLogo_linkedIn">
+                    <img src={githubLogo}/>
+                  </div>
+                  <div className="navbar_menuLogo_git">
+                    <img src={linkedIn}/>
+                  </div>
+                  
               </motion.ul>
-        </motion.div>
-        )}
+          </motion.div>
+          )}
         </AnimatePresence>
 
 
