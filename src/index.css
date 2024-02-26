@@ -16,7 +16,8 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #999D9E;
+  background-color: black;
+  /* background-color: #999D9E; */
 
   /* font-synthesis: none; */
   text-rendering: optimizeLegibility;
@@ -42,7 +43,17 @@ body {
   transition: background-color 1s ease-in-out;
 }
 
-body.background-color-change {
+body.background-color-change-projects {
   background-color: black;
+  transition: background-color 1s ease-in-out;
+}
+
+body.background-color-change-project2 {
+  background-color: #0F083D;
+  transition: background-color 1s ease-in-out;
+}
+
+body.background-color-change-project3 {
+  background-color: white;
   transition: background-color 1s ease-in-out;
 }

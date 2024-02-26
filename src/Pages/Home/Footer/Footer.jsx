@@ -21,23 +21,17 @@ export default function Footer () {
 
           <div className='footer_data'>
             <h2>Let's work together</h2>
-
             <div>
               <p>kemel.developer@gmail.com</p>
             </div>
             <div>
               <p>(+506) 8885-0715</p>
             </div>
-
             <div className='footer_images'>
               <img src={linkedIn} alt="linked In logo" />
               <img src={githubLogo} alt="github Logo" />
             </div>
-
           </div>
-          
-          
-            
         </div>
 
       </div>

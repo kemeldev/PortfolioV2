@@ -1,14 +1,23 @@
 .project_mainContainer {
   width: 98%;
   position: relative;
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
+  color: black;
+}
+
+.project_mainContainer.appear-transition {
+  color: white;
 }
 
 .project_titleSection {
-  padding: 2rem 2rem 0 2rem;
+  padding: 4rem 2rem 1rem 2rem;
   text-transform: capitalize;
 }
 
-.project_1 {
+.project_1,
+.project_2 {
   width: 100%;
   padding: 2%;
   border: solid red 1px;
@@ -16,18 +25,21 @@
   flex-direction: row;
 }
 
-.project_1_image {
+.project_1_image,
+.project_2_image {
   width: 70%;
   border: solid blue 1px;
 
 }
 
-.project_1_image img {
+.project_1_image img,
+.project_2_image img {
   width: 100%;
   object-fit: cover;
 }
 
-.project_1_data {
+.project_1_data,
+.project_2_data {
   width: 30%;
   padding: 2rem;
   border: solid green 1px;

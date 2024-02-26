@@ -3,6 +3,8 @@ import kemelImage from './kemelImage.png'
 import ellipse1 from './Ellipse1.png'
 
 import projectWatch from './projectWatch.png'
+import projectEcommerce from './projectEcommerce.png'
+import projectConstruction from './projectConstruction.png'
 
 export {
   myPhoto,
@@ -10,5 +12,7 @@ export {
   kemelImage,
 
 
+  projectConstruction,
+  projectEcommerce,
   projectWatch
 }
