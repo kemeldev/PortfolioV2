@@ -18,7 +18,7 @@ export default function Home() {
       <section id="about">
         <AboutMe />
       </section>
-      <section id="projects">
+      <section id="projects" style={{width: "100vw",display:"flex", flexDirection: "column", alignItems: "center"}}>
         <Projects />
       </section>
       <section id="moreWork">

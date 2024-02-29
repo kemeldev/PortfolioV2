@@ -1,27 +1,66 @@
 .moreWork_mainContainer {
-  height: 500px;
+  width: 100vw;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  z-index: 2;
+  padding-bottom: 150px;
+
+}
+
+.moreWork_titleSection {
+  padding: 4rem 6rem 1rem 6rem;
+  text-transform: capitalize;
+  font-size: larger;
+}
+
+.moreWork_titleSection hr {
+  height: 3px;
   background-color: black;
+  border: black;
+}
+
+.moreWork_gridContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.moreWork_grid {
+  display: grid;
+  width: 90%;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  justify-items: center;
+  text-align: center;
+  align-items: center;
+  row-gap: 2rem;
+}
+
+.moreWork_grid>div {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  width: 400px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.8);
 }
 
 
-
-
-/* .example-container div {
-  background: white;
-  border-radius: 30px;
-  width: 150px;
-  height: 150px;
-  top: calc(50% - 150px / 2);
-  left: calc(50% - 150px / 2);
+.moreWork_grid>div:nth-child(n),
+.moreWork_grid>div:nth-child(4n),
+.moreWork_grid>div:nth-child(7n) {
+  background-color: #D7E4EC;
+  /* Color for elements 1, 4, 7 */
 }
 
-.example-container .drag-area {
-  opacity: 0.2;
-  background: white;
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  border-radius: 30px;
-  top: calc(50% - 150px);
-  left: calc(50% - 150px);
-} */
+.moreWork_grid>div:nth-child(2n),
+.moreWork_grid>div:nth-child(5n),
+.moreWork_grid>div:nth-child(8n) {
+  background-color: #D7D7DC;
+  /* Color for elements 2, 5, 8 */
+}
+
+.moreWork_grid>div:nth-child(3n) {
+  background-color: #E4DFDB;
+  /* Color for elements 3, 6, 9 */
+}

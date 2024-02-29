@@ -8,6 +8,7 @@
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -15,14 +16,18 @@
   padding: 0;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: black;
-  /* background-color: #999D9E; */
+  /* background-color: black; */
+  background-color: rgb(255, 255, 255);
 
   /* font-synthesis: none; */
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+canvas {
+  z-index: -2;
+  background-color: transparent;
 }
 
 
@@ -44,7 +49,7 @@ body {
 }
 
 body.background-color-change-projects {
-  background-color: black;
+  background-color: #252525;
   transition: background-color 1s ease-in-out;
 }
 

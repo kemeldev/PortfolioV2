@@ -1,6 +1,6 @@
 import myPhoto from './myPhoto.jpg'
 import kemelImage from './kemelImage.png'
-import ellipse1 from './Ellipse1.png'
+import ellipse1 from './Ellipse3.png'
 
 import projectWatch from './projectWatch.png'
 import projectEcommerce from './projectEcommerce.png'

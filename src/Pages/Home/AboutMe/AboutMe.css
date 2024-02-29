@@ -7,10 +7,26 @@
   opacity: 0;
   transition: all 3s ease;
   gap: 4rem;
-  padding: 5rem;
+  padding: 0 5rem;
   color: black;
 
 }
+
+.about_title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: black;
+}
+
+.about_titleSection {
+  padding: 4rem 6rem 1rem 6rem;
+  text-transform: capitalize;
+  font-size: larger;
+  color: rgb(255, 255, 255);
+}
+
+.about_titleSection hr {}
 
 .about_mainContainer p:nth-child(1) {
   font-weight: bold;
@@ -24,7 +40,8 @@
 
 .about_mainContainer.appear-transition {
   opacity: 1;
-  background-color: rgb(75, 72, 72);
+  background-color: #ffffff;
+
   /* Change opacity to 1 when the component appears */
 }
 
@@ -35,7 +52,7 @@
 
 .about_mainContainer.appear-transition p:nth-child(2) {
   opacity: 1;
-  transition: all 5s ease;
+  transition: all 3s ease;
 }
 
 .canvas_test {

@@ -7,6 +7,12 @@ import MagneticBtn from '../../../componets/MagneticBtn';
 export default function Navbar   () {
   const [menuOpen, setMenuOpen] = useState(false)
 
+  const scrollToSection= (sectionId) => {
+    const section = document.getElementById(sectionId);
+    section.scrollIntoView({ behavior: 'smooth' });
+    setMenuOpen(false);
+  }
+
   const menuVars = {
     initial: { scaleX: 0, borderRadius: '50%' },
     animate: { 
@@ -29,12 +35,12 @@ export default function Navbar   () {
   return (
     <>
       <nav className='navbar_mainContainer'>
-        <h3>Kevin Bolanos - kemel.developer</h3>
+        <h3>Kevin Bolanos</h3>
 
         <ul className='navbar_list'>
-          <li><MagneticBtn buttonText={"Projects"} /></li>
-          <li><MagneticBtn buttonText={"About"} /></li>
-          <li><MagneticBtn buttonText={"Contact"} /></li>
+          <li onClick={() => scrollToSection('projects')}><MagneticBtn buttonText={"Projects"} /></li>
+          <li onClick={() => scrollToSection('about')}><MagneticBtn buttonText={"About"} /></li>
+          <li onClick={() => scrollToSection('contact')}><MagneticBtn buttonText={"Contact"} /></li>
         </ul>
 
         <div className='navbar_menuBtn' onClick={() => setMenuOpen(prevstate => !prevstate)}>

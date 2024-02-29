@@ -1,0 +1,37 @@
+/* @keyframes dash-offset {
+  0% {
+    stroke-dashoffset: 20;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash-offset-second {
+  0% {
+    stroke-dashoffset: 12;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes recursive-animation {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.animated-svg {
+  animation: dash-offset 0.45s forwards, dash-offset-second 0.3s forwards 0.45s, recursive-animation 1.5s infinite ease-in-out 1.8s;
+} */
